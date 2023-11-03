@@ -1,0 +1,15 @@
+SELECT * FROM movies;
+SELECT first_name, last_name, rating FROM actors;
+SELECT title FROM series;
+SELECT title, rating, length FROM movies;
+SELECT first_name, last_name, rating FROM actors WHERE rating > 7.5;
+SELECT title, rating, awards FROM movies WHERE rating > 7.5 AND awards > 2;
+SELECT title, rating FROM movies ORDER BY rating ASC;
+SELECT first_name, last_name, rating FROM actors WHERE rating BETWEEN 4.0 AND 10.0;
+SELECT title, release_date FROM movies WHERE length > 150;
+SELECT title, rating FROM movies WHERE title LIKE '%Toy Story%';
+SELECT first_name, last_name FROM actors WHERE first_name LIKE 'Sam%';
+SELECT first_name, last_name, rating FROM actors ORDER BY rating DESC;
+SELECT title, release_date, rating FROM movies ORDER BY rating DESC;  
+SELECT first_name, last_name FROM actors WHERE first_name LIKE '%a%';
+SELECT title, release_date FROM movies WHERE release_date BETWEEN '2004-01-01' AND '2008-12-31';
